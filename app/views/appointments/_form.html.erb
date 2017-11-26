@@ -1,0 +1,9 @@
+<%= simple_form_for [@doctor, @appointment] do |f| %>
+    <div class="form-group">
+      <%= f.input :date, as: :date, html5: true %>
+    </div>
+    <div class="form-group">
+      <%= f.association :patient %>
+    </div>
+    <%= f.submit class: 'btn btn-form' %>
+<% end %>

@@ -1,0 +1,7 @@
+<%= simple_form_for (@doctor) do |f| %>
+    <div class="form-group">
+      <%= f.input :name %>
+      <%= f.input :specialty %>
+    </div>
+    <%= f.submit class: 'btn btn-form' %>
+<% end %>
